@@ -438,4 +438,5 @@ venv.bak/
 /wireplanet/game_log.txt
 /wireplanet/save_data.sav
 /WirePlanet_*.zip
+/WirePlanet_*/
 /temp/
