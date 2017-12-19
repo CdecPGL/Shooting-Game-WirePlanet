@@ -1,0 +1,93 @@
+﻿p { 
+	line-height:1.5em;
+	padding:0.5em;
+	font-size:12pt;	
+	 color:white;
+}
+
+table{
+	color:white;
+	border:thin white solid;
+}
+
+tr{
+	border:thin white solid;
+}
+
+td{
+	border:thin white solid;	
+}
+
+a{
+	color:aqua;
+}
+
+img.ScreenShot{
+	border: thin white solid;
+	width: 640px;
+	height: 480px; 
+}
+
+.Title{
+	font-size:x-large;
+	font-weight:bold;
+	border-bottom:medium white double;
+}
+
+.SubTitle{
+	font-size:large;
+	font-weight:bold;
+	border-bottom: thin white groove;
+}
+
+.MiniTitle{
+	font-size:medium;
+	font-weight:bold;
+}
+
+
+
+#header {
+	width: 960px;
+	background-color:black;
+	font-weight: bold;
+	color:white;
+}
+
+#main {
+	width: 960px;
+	/*全体を中央寄せ*/
+	 text-align:center;
+	 margin-left:auto;
+	 margin-right:auto;
+	 text-align:left;
+	 color:white;
+
+}
+
+#menu {
+	float: left;
+	width: 180px;
+	font-weight: bold;
+	background-color:black;
+	color:white;
+}
+
+#contents {
+	float: left;
+	width:775px;
+	background-color:black;
+	color:white;
+}
+
+#footer {
+	clear: both;
+	width: 960px;
+	background-color:black;
+	color:white;
+}
+
+#screen_shot_image{
+	width:600px;
+	height: 450px;
+}

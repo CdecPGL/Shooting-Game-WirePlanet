@@ -1,0 +1,13 @@
+//AnimationFile_Cdec
+version{3.0;}
+size{16,16;}
+graph_pass{BulletDisappear;}
+animation{
+	normal{
+		interval,5;
+		repeat,0;
+		frame{
+			0,0,0;
+		}
+	}
+}

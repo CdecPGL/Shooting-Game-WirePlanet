@@ -1,0 +1,14 @@
+敵種類,体力,摩擦,無敵時間,ドロップエネルギー,ムーバ,アクションID
+GreenEnemy,1,1,30,80,GreenEnemy,GreenEnemy
+RedEnemy,10,1,30,250,RedEnemy,RedEnemy
+PurpleEnemy,15,1,500,300,Zakuru,PurpleEnemy
+SkyblueEnemy,7,1,180,100,Raiza,SkyblueEnemy
+PinkEnemy,20,1,30,1000,PinkEnemy,PinkEnemy
+WhiteEnemy,30,1,30,2500,WhiteEnemy,WhiteEnemy
+SuperGreen,100,1,30,7000,SuperGreen,SuperGreen
+SuperSkyblue,150,1,30,14000,SuperSkyblue,SuperSkyblue
+SuperRed,270,1,30,24000,SuperRed,SuperRed
+SuperPurple,150,1,30,48000,SuperPurple,SuperPurple
+SuperPink,600,1,30,100000,SuperPink,SuperPink
+SuperWhite,10000,1,30,500000,SuperWhite,SuperWhite
+Rainbow,100000,1,30,1000000,Rainbow,Rainbow

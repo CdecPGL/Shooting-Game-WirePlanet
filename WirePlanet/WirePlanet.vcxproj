@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A315B786-D931-4660-A323-36441E38D269}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WirePlanetv0_3</RootNamespace>
+    <ProjectName>WirePlanet</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vcpkg_win_x86_static.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vcpkg_win_x86_static.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)ArchiveLibrary;$(SolutionDir)libraries\zlib\include;$(SolutionDir)libraries\luabind-0.9.1;$(SolutionDir)libraries\lua-5.1.5_Win32_vc14_lib\include;$(SolutionDir)libraries\DxLibNoneModel_VC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libraries\DxLibNoneModel_VC;$(SolutionDir)libraries\zlib\lib;$(SolutionDir)libraries\lua-5.1.5_Win32_vc14_lib;$(BOOST_ROOT)\stage\x86\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)ArchiveLibrary;$(SolutionDir)libraries\zlib\include;$(SolutionDir)libraries\luabind-0.9.1;$(SolutionDir)libraries\lua-5.1.5_Win32_vc14_lib\include;$(SolutionDir)libraries\DxLibNoneModel_VC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)libraries\DxLibNoneModel_VC;$(SolutionDir)libraries\zlib\lib;$(SolutionDir)libraries\lua-5.1.5_Win32_vc14_lib;$(BOOST_ROOT)\stage\x86\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationData.cpp" />
+    <ClCompile Include="AnimationDataAdmin.cpp" />
+    <ClCompile Include="AnimationDataLoader.cpp" />
+    <ClCompile Include="AnimationEffect.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="AnimationUtility.cpp" />
+    <ClCompile Include="ArchiveLoader.cpp" />
+    <ClCompile Include="Attack.cpp" />
+    <ClCompile Include="background.cpp" />
+    <ClCompile Include="BinaryData.cpp" />
+    <ClCompile Include="Boomerang.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="BulletCreator.cpp" />
+    <ClCompile Include="Camera2D.cpp" />
+    <ClCompile Include="CameraController.cpp" />
+    <ClCompile Include="CdecFile.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="CharacterBase.cpp" />
+    <ClCompile Include="CharacterController.cpp" />
+    <ClCompile Include="CharacterCreators.cpp" />
+    <ClCompile Include="CharacterFactory.cpp" />
+    <ClCompile Include="CharacterManager.cpp" />
+    <ClCompile Include="CollisionDatas.cpp" />
+    <ClCompile Include="CollisionDetect.cpp" />
+    <ClCompile Include="CollisionDetecter.cpp" />
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="CreateEffectFuncs.cpp" />
+    <ClCompile Include="CreateObjectFuncs.cpp" />
+    <ClCompile Include="DataBlock.cpp" />
+    <ClCompile Include="DataContainer.cpp" />
+    <ClCompile Include="DataScript.cpp" />
+    <ClCompile Include="DebugWindow.cpp" />
+    <ClCompile Include="DropedEnergyBall.cpp" />
+    <ClCompile Include="DSStandardDataStructure.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="EffectCreators.cpp" />
+    <ClCompile Include="EffectFactory.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyGenerator.cpp" />
+    <ClCompile Include="EnemyMoverManager.cpp" />
+    <ClCompile Include="EnemySpawnEffect.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="EXOR.cpp" />
+    <ClCompile Include="FileIOUtilFuncs.cpp" />
+    <ClCompile Include="FileLoadManager.cpp" />
+    <ClCompile Include="FileLoadUtility.cpp" />
+    <ClCompile Include="CreateCharaFuncs.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameCounter.cpp" />
+    <ClCompile Include="GameInitializer.cpp" />
+    <ClCompile Include="GamePlayInformations.cpp" />
+    <ClCompile Include="GameScreenEffect.cpp" />
+    <ClCompile Include="GPIUtil.cpp" />
+    <ClCompile Include="GraphicController2D.cpp" />
+    <ClCompile Include="GraphicManager.cpp" />
+    <ClCompile Include="GraphicObject.cpp" />
+    <ClCompile Include="GraphicUtils.cpp" />
+    <ClCompile Include="GuidedBullet.cpp" />
+    <ClCompile Include="InformationArea.cpp" />
+    <ClCompile Include="INIData.cpp" />
+    <ClCompile Include="INILoader.cpp" />
+    <ClCompile Include="INISaver.cpp" />
+    <ClCompile Include="InitDatas.cpp" />
+    <ClCompile Include="InitFuncs.cpp" />
+    <ClCompile Include="InitFuncsF.cpp" />
+    <ClCompile Include="InputWindow.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="LaserManager.cpp" />
+    <ClCompile Include="LevelChangeEffect.cpp" />
+    <ClCompile Include="LowStateIndivisualManager.cpp" />
+    <ClCompile Include="luabind_sources.cpp" />
+    <ClCompile Include="LuaStateCreator.cpp" />
+    <ClCompile Include="LuaStateHolder.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MassageWindowManager.cpp" />
+    <ClCompile Include="MenuItemInfoShower.cpp" />
+    <ClCompile Include="MenuItems.cpp" />
+    <ClCompile Include="MessageWindow.cpp" />
+    <ClCompile Include="MessageWindowUtilityClass.cpp" />
+    <ClCompile Include="NormalEffectCreator.cpp" />
+    <ClCompile Include="NormalFolderLoader.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="DefaultGameObjects.cpp" />
+    <ClCompile Include="PlanetG.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="PlayerB.cpp" />
+    <ClCompile Include="PlayerClone.cpp" />
+    <ClCompile Include="PlayerMeter.cpp" />
+    <ClCompile Include="RSA.cpp" />
+    <ClCompile Include="RSADecrypter.cpp" />
+    <ClCompile Include="RSAEncrypter.cpp" />
+    <ClCompile Include="RSAUtility.cpp" />
+    <ClCompile Include="SaveData.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneChangeEffect.cpp" />
+    <ClCompile Include="SceneFactory.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="ScoreEffect.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="SelectWindow.cpp" />
+    <ClCompile Include="SingleGraphEffect.cpp" />
+    <ClCompile Include="SingleLineWindow.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="StraightBullet.cpp" />
+    <ClCompile Include="SVLoader.cpp" />
+    <ClCompile Include="SystemVariable.cpp" />
+    <ClCompile Include="TextWindow.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="UtilityFuncsForLua.cpp" />
+    <ClCompile Include="ViewPlayInformations.cpp" />
+    <ClCompile Include="VSYNCManager.cpp" />
+    <ClCompile Include="WirePlanet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationData.h" />
+    <ClInclude Include="AnimationDataAdmin.h" />
+    <ClInclude Include="AnimationDataLoader.h" />
+    <ClInclude Include="AnimationEffect.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="AnimationUtility.h" />
+    <ClInclude Include="ArchiveLoader.h" />
+    <ClInclude Include="Attack.h" />
+    <ClInclude Include="background.h" />
+    <ClInclude Include="BezierCurve.h" />
+    <ClInclude Include="BinaryData.h" />
+    <ClInclude Include="Boomerang.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="BulletCreator.h" />
+    <ClInclude Include="Camera2D.h" />
+    <ClInclude Include="CameraController.h" />
+    <ClInclude Include="CdecFile.h" />
+    <ClInclude Include="character.h" />
+    <ClInclude Include="CharacterBase.h" />
+    <ClInclude Include="CharacterController.h" />
+    <ClInclude Include="CharacterCreators.h" />
+    <ClInclude Include="CharacterFactory.h" />
+    <ClInclude Include="CharacterManager.h" />
+    <ClInclude Include="CollisionDatas.h" />
+    <ClInclude Include="CollisionDetecter.h" />
+    <ClInclude Include="CollisionDetect.h" />
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="CreateEffectFuncs.h" />
+    <ClInclude Include="CreateObjectFuncs.h" />
+    <ClInclude Include="CreatorTemplate.h" />
+    <ClInclude Include="curve.h" />
+    <ClInclude Include="DataBlock.h" />
+    <ClInclude Include="DataContainer.h" />
+    <ClInclude Include="DataScript.h" />
+    <ClInclude Include="DebugWindow.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="DropedEnergyBall.h" />
+    <ClInclude Include="DSStandardDataStructure.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EffectCreators.h" />
+    <ClInclude Include="EffectFactory.h" />
+    <ClInclude Include="EffectManager.h" />
+    <ClInclude Include="encryptionlibrary.h" />
+    <ClInclude Include="encryption_definition.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyGenerator.h" />
+    <ClInclude Include="EnemyMoverManager.h" />
+    <ClInclude Include="EnemySpawnEffect.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="EXOR.h" />
+    <ClInclude Include="FileIOUtilFuncs.h" />
+    <ClInclude Include="FileLoadManager.h" />
+    <ClInclude Include="FileLoadUtility.h" />
+    <ClInclude Include="CreateCharaFuncs.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameCounter.h" />
+    <ClInclude Include="GameInitializer.h" />
+    <ClInclude Include="GamePlayInformations.h" />
+    <ClInclude Include="GameScreenEffect.h" />
+    <ClInclude Include="GPIUtil.h" />
+    <ClInclude Include="GraphicController2D.h" />
+    <ClInclude Include="GraphicManager.h" />
+    <ClInclude Include="GraphicObject.h" />
+    <ClInclude Include="GraphicUtils.h" />
+    <ClInclude Include="GuidedBullet.h" />
+    <ClInclude Include="HermiteCurve.h" />
+    <ClInclude Include="INIData.h" />
+    <ClInclude Include="INILoader.h" />
+    <ClInclude Include="INISaver.h" />
+    <ClInclude Include="interpolating.h" />
+    <ClInclude Include="InterpoliteStrategy.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="PlayerClone.h" />
+    <ClInclude Include="RSA.h" />
+    <ClInclude Include="RSADecrypter.h" />
+    <ClInclude Include="RSAEncrypter.h" />
+    <ClInclude Include="RSAUtility.h" />
+    <ClInclude Include="SecureObject.h" />
+    <ClInclude Include="InformationArea.h" />
+    <ClInclude Include="InitDatas.h" />
+    <ClInclude Include="InitFuncs.h" />
+    <ClInclude Include="InputWindow.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="LaserManager.h" />
+    <ClInclude Include="LevelChangeEffect.h" />
+    <ClInclude Include="LoaderBase.h" />
+    <ClInclude Include="LowStateIndivisualManager.h" />
+    <ClInclude Include="LuaStateCreator.h" />
+    <ClInclude Include="LuaStateHolder.h" />
+    <ClInclude Include="MassageWindowManager.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MatrixMap.h" />
+    <ClInclude Include="MenuItemInfoShower.h" />
+    <ClInclude Include="MenuItems.h" />
+    <ClInclude Include="MessageWindow.h" />
+    <ClInclude Include="MessageWindowUtilityClass.h" />
+    <ClInclude Include="NormalEffectCreator.h" />
+    <ClInclude Include="NormalFolderLoader.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="ObjectHolderTemplate_WithID.h" />
+    <ClInclude Include="ObjectHolderTemplate_WithoutID.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="DefaultGameObjects.h" />
+    <ClInclude Include="PlanetG.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="PlayerB.h" />
+    <ClInclude Include="PlayerMeter.h" />
+    <ClInclude Include="RectAngle.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaveData.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneChangeEffect.h" />
+    <ClInclude Include="SceneFactory.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="ScoreEffect.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="secure_exception.h" />
+    <ClInclude Include="SelectWindow.h" />
+    <ClInclude Include="SingleGraphEffect.h" />
+    <ClInclude Include="SingleLineWindow.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="StraightBullet.h" />
+    <ClInclude Include="SVLoader.h" />
+    <ClInclude Include="SystemVariable.h" />
+    <ClInclude Include="TextWindow.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Trigger.h" />
+    <ClInclude Include="UtilityFuncsForLua.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="ViewPlayInformations.h" />
+    <ClInclude Include="VSYNCManager.h" />
+    <ClInclude Include="WirePlanet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArchiveLibrary\ArchiveLibrary.vcxproj">
+      <Project>{51471b0a-7303-475c-9870-b7b14e0291fc}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

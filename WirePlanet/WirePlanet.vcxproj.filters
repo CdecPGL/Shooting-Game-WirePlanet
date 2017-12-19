@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{6600128f-53e4-4919-82d7-68600952a5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionDetect">
+      <UniqueIdentifier>{309330fc-3a12-450d-8255-65a2a8c099cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{6ec65974-da6c-42ae-93cf-2756a2389105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FIleIO">
+      <UniqueIdentifier>{cd417564-8565-4171-899d-a9e8d0704d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageWindow">
+      <UniqueIdentifier>{f2f38c95-95c3-4483-92e5-07aebbfa5cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{0cae8e04-a647-4873-875f-0e621267cf32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Effects">
+      <UniqueIdentifier>{02e8035a-aafb-4258-91a9-e4c995243540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Planet">
+      <UniqueIdentifier>{700d2850-27ba-485c-9c14-3190c7ed7082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Character">
+      <UniqueIdentifier>{be1b7529-e7e4-4098-bd6a-08919fe112cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Character\Player">
+      <UniqueIdentifier>{5f415367-08ca-4381-9723-9fb243433ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Character\CharacterCreator">
+      <UniqueIdentifier>{324dfdac-ce0e-4bf6-9a0b-87d9062c3e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Attack">
+      <UniqueIdentifier>{f2db8beb-c524-4241-8171-bfa6f2c76547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera2D">
+      <UniqueIdentifier>{285ba8a1-7904-4bfd-9a57-edb17ee2bdf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Item">
+      <UniqueIdentifier>{2b4ded2d-ccf4-45db-9bb1-dd5018ffe8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InfoArea">
+      <UniqueIdentifier>{3feb57f0-15e5-45bd-97e2-260810fb9f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Character\Bullet">
+      <UniqueIdentifier>{e57248c9-d733-4fe9-aaeb-4dbf26a3d25e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{d2ea420d-8662-4753-993b-0c0b4b2f8f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Laser">
+      <UniqueIdentifier>{cb3e7dcf-7484-491d-9514-916f887ea91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries">
+      <UniqueIdentifier>{a4eaa1ed-ab8b-41ad-b82f-9e1caddca0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\OriginalScriptLibrary">
+      <UniqueIdentifier>{5f681dbd-c78d-4560-8628-28432c54c11e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\KeyLibrary">
+      <UniqueIdentifier>{79421ad3-e31c-417e-b548-fe4c319b9c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\DataContainer">
+      <UniqueIdentifier>{d1bcacc1-1f71-49db-8a18-d5d5301df4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\CollisionDetectLibrary">
+      <UniqueIdentifier>{aee71918-131d-4634-9e1c-ea4499a9e191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\AnimationLibrary">
+      <UniqueIdentifier>{0a604d1e-83d4-494a-bdae-51d00cc06536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\INILoaderLibrary">
+      <UniqueIdentifier>{2b3a2965-b74a-4600-8017-ff1140a2742a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\EncryptionLibrary">
+      <UniqueIdentifier>{c994df18-a152-4b2f-8671-cfda930ce472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\luabind-0.9.1">
+      <UniqueIdentifier>{f61be953-b99d-489e-acdf-475a5cbf2f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibraries\TemlateLibraries">
+      <UniqueIdentifier>{2c30823f-c1be-47cf-a846-27d95adc8a22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="InitFuncs.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaStateCreator.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletCreator.cpp">
+      <Filter>Object\Character\CharacterCreator</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterCreators.cpp">
+      <Filter>Object\Character\CharacterCreator</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterFactory.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterManager.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFactory.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDatas.cpp">
+      <Filter>CollisionDetect</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetecter.cpp">
+      <Filter>CollisionDetect</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugWindow.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuItems.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuItemInfoShower.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDatas.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Planet.cpp">
+      <Filter>Object\Planet</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetG.cpp">
+      <Filter>Object\Planet</Filter>
+    </ClCompile>
+    <ClCompile Include="SVLoader.cpp">
+      <Filter>FIleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateEffectFuncs.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectFactory.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelChangeEffect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawnEffect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyMoverManager.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyGenerator.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicUtils.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LowStateIndivisualManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Object\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerB.cpp">
+      <Filter>Object\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterController.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectCreators.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalEffectCreator.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleGraphEffect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationEffect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreEffect.cpp">
+      <Filter>Object\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="InputWindow.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="MassageWindowManager.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="TextWindow.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectWindow.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageWindow.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaStateHolder.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleLineWindow.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack.cpp">
+      <Filter>Object\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera2D.cpp">
+      <Filter>Camera2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicController2D.cpp">
+      <Filter>Camera2D</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultGameObjects.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreenEffect.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageWindowUtilityClass.cpp">
+      <Filter>MessageWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterBase.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="DropedEnergyBall.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationArea.cpp">
+      <Filter>InfoArea</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMeter.cpp">
+      <Filter>InfoArea</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Object\Character\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Boomerang.cpp">
+      <Filter>Object\Character\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="StraightBullet.cpp">
+      <Filter>Object\Character\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CdecFile.cpp">
+      <Filter>FIleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoadManager.cpp">
+      <Filter>FIleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalFolderLoader.cpp">
+      <Filter>FIleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoadUtility.cpp">
+      <Filter>FIleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityFuncsForLua.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>Camera2D</Filter>
+    </ClCompile>
+    <ClCompile Include="ArchiveLoader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="InitFuncsF.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserManager.cpp">
+      <Filter>Object\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.cpp">
+      <Filter>Object\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChangeEffect.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateObjectFuncs.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateCharaFuncs.cpp">
+      <Filter>Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInitializer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="WirePlanet.cpp">
+      <Filter>Object\Planet</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlayInformations.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewPlayInformations.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GPIUtil.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCounter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerClone.cpp">
+      <Filter>Object\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GuidedBullet.cpp">
+      <Filter>Object\Character\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="VSYNCManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemVariable.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIOUtilFuncs.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBlock.cpp">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="DataScript.cpp">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="DSStandardDataStructure.cpp">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Key.cpp">
+      <Filter>MyLibraries\KeyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="DataContainer.cpp">
+      <Filter>MyLibraries\DataContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetect.cpp">
+      <Filter>MyLibraries\CollisionDetectLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationData.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDataAdmin.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDataLoader.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationUtility.cpp">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="INIData.cpp">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="INILoader.cpp">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="INISaver.cpp">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryData.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="EXOR.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RSADecrypter.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RSAEncrypter.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RSAUtility.cpp">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="luabind_sources.cpp">
+      <Filter>MyLibraries\luabind-0.9.1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFactory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterFactory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SVLoader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InitFuncs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetecter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDatas.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaStateCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyMoverManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="StraightBullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterCreators.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelChangeEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyGenerator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawnEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectFactory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateEffectFuncs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InformationArea.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetG.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItems.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItemInfoShower.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDatas.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicUtils.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LowStateIndivisualManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerB.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterController.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleGraphEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatorTemplate.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectCreators.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalEffectCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MassageWindowManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TextWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaStateHolder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleLineWindow.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHolderTemplate_WithID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHolderTemplate_WithoutID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Boomerang.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Camera2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera2D.h">
+      <Filter>Camera2D</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicController2D.h">
+      <Filter>Camera2D</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultGameObjects.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreenEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageWindowUtilityClass.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DropedEnergyBall.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateCharaFuncs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixMap.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMeter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoadManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CdecFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalFolderLoader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoadUtility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityFuncsForLua.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderBase.h">
+      <Filter>FIleIO</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchiveLoader.h">
+      <Filter>FIleIO</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeEffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateObjectFuncs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInitializer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="RectAngle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="WirePlanet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="secure_exception.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePlayInformations.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewPlayInformations.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GPIUtil.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerClone.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCounter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GuidedBullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="VSYNCManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemVariable.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIOUtilFuncs.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBlock.h">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="DataScript.h">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="DSStandardDataStructure.h">
+      <Filter>MyLibraries\OriginalScriptLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>MyLibraries\KeyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="DataContainer.h">
+      <Filter>MyLibraries\DataContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetect.h">
+      <Filter>MyLibraries\CollisionDetectLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationData.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDataAdmin.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDataLoader.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationUtility.h">
+      <Filter>MyLibraries\AnimationLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="INIData.h">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="INILoader.h">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="INISaver.h">
+      <Filter>MyLibraries\INILoaderLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryData.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption_definition.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="encryptionlibrary.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="EXOR.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="RSADecrypter.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="RSAEncrypter.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="RSAUtility.h">
+      <Filter>MyLibraries\EncryptionLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierCurve.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="curve.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="HermiteCurve.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="interpolating.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="InterpoliteStrategy.h">
+      <Filter>MyLibraries\TemlateLibraries</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

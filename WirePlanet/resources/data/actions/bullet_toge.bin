@@ -1,0 +1,22 @@
+Property{
+	kind = ActionFile;
+	version = 0.1;
+}
+ActionData{
+	size = 16;
+	ActionDataUnit{
+		tag = idol;
+		graphic_filename = BulletToge;
+		interval = 0;
+		repeat_flag = 0;
+		HitAreaData{
+			attribute = 3;
+			x = -4;
+			y = 0;
+			radius = 4;
+			start_frame 0;
+			end_frame = 0;
+			additional_param=1;
+		}
+	}
+}

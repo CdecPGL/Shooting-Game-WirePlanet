@@ -1,0 +1,23 @@
+Property{
+	kind = ActionFile;
+	version = 0.1;
+}
+ActionData{
+	size = 32;
+	ActionDataUnit{
+		tag = idol;
+		graphic_filename = PurpleEnemy;
+		interval = 0;
+		repeat_flag = 0;
+		HitAreaData{
+			attribute = 7;
+			x = 0;
+			y = 0;
+			radius = 16;
+			start_frame 0;
+			end_frame = 0;
+			additional_param=12;
+			matchless_time=30;
+		}
+	}
+}

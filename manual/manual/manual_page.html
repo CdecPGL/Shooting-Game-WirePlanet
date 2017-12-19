@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>WirePlanet Manual</title>
+<link rel="shortcut icon" href="../graphics/Icon.ico"/>
+<link href="../StyleSheets/default_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color:black">
+<div id="main">
+<div id="header">
+	<a href="http://gameplanet.web.fc2.com/WirePlanet/index.html" title="WirePlanetホームページへ">WirePlanetホームページ</a>
+	<p style="border-bottom-style: double; border-bottom-width: medium; border-bottom-color: #FFFFFF">
+	<img height="109" src="../graphics/wireplanet_logo.png" width="377" alt="WirePlanetロゴ" />
+	</p>
+	</div>
+<div id="menu" style="border-right-style: groove; border-right-width: medium; border-right-color: #FFFFFF">
+<p>
+<a href="../index.html" title="概要">
+<img src="../graphics/menu_about.png" alt="About" longdesc="../概要" /></a><br />
+<a href="manual_page.html" title="操作説明">
+<img src="../graphics/menu_manual.png" alt="Manual" longdesc="../操作説明"  /></a><br />
+<a href="../tips/tips_page.html" title="おまけ・コツなど">
+<img src="../graphics/menu_tips.png" alt="Tips" longdesc="../おまけ・コツなど" /></a><br />
+</p>
+	</div>
+<div id="contents">
+<!-- #BeginEditable "main_area" -->
+	<p>
+<img height="40" src="../graphics/menu_manual.png" width="129" alt="Manual" /><br />
+<br/>
+<span class="Title">ゲームの目的</span><br />
+<br/>
+　プレイヤーのいる惑星を破壊しようとしてくる敵から惑星を守りましょう。敵はWaveごとにまとまって攻めてきます。<br />
+<br/>
+<span class="SubTitle">クリア条件</span><br/>
+　惑星が破壊されないように攻めてくる敵と、数Waveごとにくるボスを倒してください。ボスは全部で6体おり、最後のボスを倒すとクリアです。<br/>
+<br/>
+<span class="SubTitle">ゲームオーバー条件</span><br/>
+　プレイヤーのHPが0になりプレイヤーが消滅するか、惑星が惑星中心付近の惑星破壊域よりへこんでしまうとゲームオーバーです。<br />
+　ゲームオーバーになった場合は後述するエネルギーを引き継ぐとともに惑星を修復し、その時点でのWaveから再開することができます。ただしスコアは半分になります。<br />
+	<br />
+	<br/>
+<span class="Title">画面</span><br />
+	<br />
+	<img alt="サンプル画面" src="../graphics/manual_sc_0.png" class="ScreenShot" /><br />
+	<br/>
+	<span class="SubTitle">１．プレイヤー</span><br />
+	<br/>
+	<span class="SubTitle">２．プレイヤーの弾</span><br />
+	<br/>
+	<span class="SubTitle">３．敵</span><br />
+	　種類の異なる敵もいます。<br/>
+	<br/>
+	<span class="SubTitle">４．敵の弾</span><br />
+	　種類の異なる敵弾もあります。<br/>
+	<br/>
+	<span class="SubTitle">５．エネルギー</span><br />
+	　敵は倒されるとエネルギーを落とします。エネルギーを一定以上取得するとプレイヤーのレベルが上がり、能力値が増加します。また、獲得したエネルギーを使用して特別な動作を行うことができますが、エネルギーが減少するとレベルも下がります。<br/>
+　敵が落とすエネルギーの挙動は空中で倒したか、地上で倒したかで異なります。空中で倒した場合は自動的にプレイヤーに集まってくるので自分で回収する必要はありません。一方地上で倒した場合はエネルギーはその場にとどまってしまうので自分で回収する必要があります。<br/>
+　ただし、敵は地上で倒したほうが空中で倒した場合よりも大量のエネルギーを落とします。<br/>
+	<br/>
+	<span class="SubTitle">６．惑星</span><br />
+	 　プレイヤーが守る惑星です。敵の爆発でへこみます。<br/>
+	 <br/>
+	<span class="SubTitle">７．惑星破壊域</span><br />
+	　惑星がこのラインを越えてへこむとゲームオーバーになります。<br/>
+	<br/>
+	<span class="SubTitle">８．体力ゲージ</span><br />
+	　ゲージが0になるとゲームオーバーです。<br/>
+	<br/>
+	<span class="SubTitle">９．エネルギーゲージ</span><br />
+	　次のレベルまでに必要なエネルギーを表しています。<br/>
+	<br/>
+	<span class="SubTitle">１０．レベル表示</span><br />
+	　数字が大きくなるほどプレイヤーは強くなります。<br/>
+	<br/>
+	<span class="SubTitle">１１．現在のスコア</span><br />
+	　敵を倒すと加算され、Wave終了ごとに条件によってボーナスが追加されます。ゲームオーバーになるとスコアは半分になってしまいます。<br/>
+	<br/>
+	<span class="SubTitle">１２．ハイスコア</span><br />
+	　そのままです。<br />
+<br/>
+<br/>
+<span class="Title">操作方法</span><br />
+<br/>
+	<span class="SubTitle">メニューでの操作</span><br />
+	項目選択:UP、DOWNキー<br />
+	決定:Cキー<br />
+	キャンセル:Aキー<br />
+	<br />
+	<span class="SubTitle">ゲームでの操作</span><br />
+	<br/>
+<span class="MiniTitle">左右移動(LEFT、RIGHTキー)</span><br />
+　移動します。空中でも移動できますが地上より融通が利きません。<br />
+<br/>
+<span class="MiniTitle">弾発射(Aキー)</span><br />
+　弾を発射して、迫ってくる敵を攻撃します。レベルによって弾の速度、連射速度、同時発射数、攻撃力が変化します。<br />
+<br/>
+<span class="MiniTitle">横に弾噴射(Xキー)</span><br />
+　プレイヤーの左右に弾を噴射し、地上の敵を倒します。レベルによって弾の噴射速度、消滅時間、攻撃力が変化します。<br />
+<br/>
+<span class="MiniTitle">ジャンプ(Cキー)</span><br />
+　ジャンプします。押す長さによってジャンプする高さが変化します。レベルによってジャンプできる高さが変化します。<br />
+<br/>
+<span class="MiniTitle">しゃがむ(DOWNキー)</span><br />
+　しゃがみます。弾をよけられるかもしれません。ただししゃがみ中はほかの行動ができません。また、空中でしゃがもうとすると早く落下することができます。<br />
+<br />
+<span class="MiniTitle">クローン作製(Zキー)</span><br />
+　勝手に弾を連射する、プレイヤーのクローンを作成します。キーを長く押してから離すことでエネルギーを多く消費して、より強いクローンを作ることができます。クローンは強いほど弾の発射・連射速度、攻撃力、消滅するまでの時間などが増加します。エネルギーが0の場合は作成できません。また、クローン作製直後に連続してクローンを作ることはできません。<br />
+<br/>
+<span class="MiniTitle">シールド(Dキー)</span><br />
+　キーを押している間、プレイヤーの周りにシールドが出現しすべての攻撃を防ぐことができます。<br />
+<br/>
+<span class="MiniTitle">体力回復(Sキー)</span><br />
+　キーを押している間、体力を回復し続けます。この動作はエネルギーを大量に消費量します。<br />
+<br/>
+<span class="MiniTitle">ポーズ(SPACEキー)</span><br />
+　ゲームを一時中断してポーズ画面を開きます。ここからタイトルに戻ったりゲームを初めから始めたりすることができます。また操作方法の確認もできます。もう一度SPACEキーを押すことでゲームを再開します。<br />
+	<br />
+	<br/>
+	<span class="Title">その他</span><br />
+	<br/>
+	　ゲームパッドに対応しています。使用する場合は起動する前に接続してください。ボタンの割り当ては以下の通りです。<br /></p>
+	<table style="width: 100%">
+		<tr>
+			<td>UP、RIGHT、UP、DOWNキー</td>
+			<td>左スティック、十字キー(ハットスイッチ)</td>
+		</tr>
+		<tr>
+			<td>Aキー</td>
+			<td>Bボタン(ボタン4)</td>
+		</tr>
+		<tr>
+			<td>Cキー</td>
+			<td>Aボタン(ボタン3)</td>
+		</tr>
+		<tr>
+			<td>Xキー</td>
+			<td>Yボタン(ボタン2)</td>
+		</tr>
+		<tr>
+			<td>Zキー</td>
+			<td>Xボタン(ボタン1)</td>
+		</tr>
+		<tr>
+			<td>Dキー</td>
+			<td>Rボタン(ボタン6)</td>
+		</tr>
+		<tr>
+			<td>Sキー</td>
+			<td>Lボタン(ボタン5)</td>
+		</tr>
+		<tr>
+			<td>SPACEキー</td>
+			<td>STARTボタン(ボタン12)</td>
+		</tr>
+	</table><br />
+	<!-- #EndEditable -->
+</div>
+<div id="footer" style="border-top-style: groove; border-top-width: medium; border-top-color: #FFFFFF">Copyright © 2014 PlanetaGameLabo All Rights Reserved.</div>
+</div>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,57 @@
+Property{
+	kind = ActionFile;
+	version = 0.1;
+}
+ActionData{
+	size = 64;
+	ActionDataUnit{
+		tag = idol;
+		graphic_filename = Player;
+		interval = 0;
+		repeat_flag = 0;
+		HitAreaData{
+			attribute = 13;
+			x = 0;
+			y = 5;
+			radius = 11;
+			start_frame 0;
+			end_frame = 0;
+		}
+	}
+	ActionDataUnit{
+		tag = barrier;
+		graphic_filename = PlayerBarrier;
+		interval = 1;
+		repeat_flag = 1;
+		HitAreaData{
+			attribute = 1;
+			x = 0;
+			y = 5;
+			radius = 11;
+			start_frame 0;
+			end_frame = 0;
+		}
+		HitAreaData{
+			attribute = 12;
+			x = 0;
+			y = 0;
+			radius = 32;
+			start_frame 0;
+			end_frame = 0;
+		}
+	}
+	ActionDataUnit{
+		tag = squat;
+		graphic_filename = PlayerSquat;
+		interval = 0;
+		repeat_flag = 0;
+		HitAreaData{
+			attribute = 13;
+			x = 0;
+			y = 9;
+			radius = 7;
+			start_frame 0;
+			end_frame = 0;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+//話者リスト(話者ID{name,表示名(NULL以外);[graphic{pass,画像パス(NULL以外);size,幅,高さ;expression{表情ID(original以外),位置(タイル座標);……;}}]}
+//expressionでは一番上の定義がデフォルトになります。
+speaker{
+};
+
+message-1{
+エラーダヨー！;
+\\WaitKeyPush;
+}
+
+//メッセージ
+//1-99:オープニング 100-199:ステージ1 1000-1099:テストステージ
+
+message1{
+コンティニューしますか？;
+\\SelectWindow=2;
+\\WaitKeyPush;
+}
+message2{
+はい;
+いいえ;
+}

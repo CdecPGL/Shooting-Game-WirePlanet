@@ -1,0 +1,21 @@
+Property{
+	kind = ActionFile;
+	version = 0.1;
+}
+ActionData{
+	size = 16;
+	ActionDataUnit{
+		tag = idol;
+		graphic_filename = droped_energy_ball.png;
+		interval = 30;
+		repeat_flag = 1;
+		HitAreaData{
+			attribute = 9;
+			x = 0;
+			y = 0;
+			radius = 8;
+			start_frame 0;
+			end_frame = 0;
+		}
+	}
+}

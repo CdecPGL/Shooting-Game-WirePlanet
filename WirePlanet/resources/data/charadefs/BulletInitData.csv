@@ -1,0 +1,5 @@
+ID,動作,アクションID,加算ブレンドモード(0:なし 1:α 2:加算 3:減算 4:乗算 5:反転 13:4倍加算),ブレンドパラメータ,色(RBG16)
+PlayerBullet,Straight,PlayerBullet,0,255,0xFFFFFF
+BulletBatsu,Straight,BulletBatsu,0,255,0xFFFFFF
+BulletToge,Straight,BulletToge,0,255,0xFFFFFF
+BulletRhombus,Guided,BulletRhombus,0,255,0xFFFFFF

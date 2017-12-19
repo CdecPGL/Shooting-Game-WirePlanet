@@ -1,0 +1,13 @@
+//AnimationFile_Cdec
+version{2.0;}
+size{32,32;}
+graph_pass{DieEffect;}
+normal{
+interval,5;
+repeat,0;
+FrameDefS;
+0,0,0;
+1,0,0;
+2,0,0;
+FrameDefE;
+}
