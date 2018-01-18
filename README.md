@@ -76,7 +76,7 @@ BoostLibraryを[公式ページ](http://www.boost.org/)からダウンロード�
 
 以下のコマンドを実行してください。
 
-```:bat
+```bat
 python setup_project.py
 ```
 
@@ -87,7 +87,7 @@ python setup_project.py
 次に以下のコマンドを実行します。
 これにより公開用ファイルのコピーと圧縮が行われ、ゲームの公開用ファイル一式が含まれるWirePlanet_[バージョン文字列].zipが生成されます。
 
-```:bat
+```bat
 python publish.py [任意のバージョン文字列]
 ```
 
